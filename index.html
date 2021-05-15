@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>QUIZ</title>
+    </head>
+<body>
+    <div><h1>Enjoy Quiz</h1></div>
+    <div class="info_box">
+        <div class="info-title"><h2>Some Rules of the Quiz</h2></div>
+        <div class="info-list">
+            <div class="info"><h3>You will have<span>10 seconds</span> per each question.</h3></div>
+            <div class="info"><h3>You can't exit from the Quiz while you're playing.</h3></div>
+            <div class="info"><h3>You will not get points on your correct answers.</h3></div>
+            <div class="info"><h3>You'll get points on your correct answers.</h3></div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Start</button>
+        </div>
+    </div>
+    <div class="quiz_box">
+        <header>
+            <div class="title">Timer Quiz</div>
+            <div class="timer">
+                <div class="time_left_txt">Time Left</div>
+                <div class="timer_sec">10</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+            </div>
+            <div class="option_list">
+            </div>
+        </section>
+        <footer>
+            <div class="total_que">
+            </div>
+            <button class="next_btn">Next Que</button>
+        </footer>
+    </div>
+    <div class="result_box">
+        <div class="icon">
+            <span class="fas fa-crown"></span>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text">
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <a href="index.html"><button><h3>Quit Quiz</h3></button></a>
+
+        </div>
+    </div>
+
+    <script>
+    var questions = [
+    {
+    numb: 1,
+    question: "How many fingers Alien have?",
+    answer: "b",
+    options: [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+    {
+    numb: 2,
+    question: "How many second in the year?",
+    answer: "d",
+    options: [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+    {
+    numb: 3,
+    question: "Why Pi is 3.14?",
+    answer: "a",
+    options: [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+    {
+    numb: 4,
+    question: "What is IC stand for?",
+    answer: "d",
+    options: [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+    {
+    numb: 5,
+    question: "What is DOM stand for?",
+    answer: "a",
+    options: [
+      "a",
+      "b",
+      "c",
+      "d"
+    ]
+  },
+];
+</script>
+
+    <script src="script.js"></script>
+
+    </body>
+</html>

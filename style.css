@@ -1,0 +1,167 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: #a569a5;
+    padding: 70px;
+    margin-right: auto;
+}
+
+.info-title h2 span {
+    margin-top: 50px;
+    color: rgb(4, 4, 46);
+    padding: 100px;
+    list-style: armenian;
+}
+.info-list h3 span {
+    color: rgb(57, 57, 164);
+}
+
+.info_box .info-list{
+    padding: 15px 30px;
+}
+
+h1 {
+    color:#004085;
+    margin: 20px;
+    padding: 15px;
+}
+
+.info_box .buttons{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+    border-top: 1px solid lightgrey;
+}
+
+.info_box .quit {
+    padding: 10px 20px;
+    color:rgb(194, 194, 100);
+    background: #007bff;
+}
+
+.info_box .restart {
+    padding: 15px 30px;
+    color:rgb(194, 194, 100);
+}
+
+.quiz_box header {
+    position: relative;
+    z-index: 2;
+    height: 70px;
+    padding: 0 30px;
+    background: rgb(126, 138, 66);
+    border-radius: 5px 5px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
+}
+.quiz_box header .title {
+    font-size: 20px;
+    font-weight: 600;
+}
+.quiz_box header .timer {
+    color: #004085;
+    background: #cce5ff;
+    border: 1px solid #b8daff;
+    height: 45px;
+    padding: 0 8px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 145px;
+}
+.quiz_box header .timer .time_left_txt{
+    font-weight: 400;
+    font-size: 17px;
+    user-select: none;
+}
+.quiz_box header .timer .timer_sec{
+    font-size: 18px;
+    font-weight: 500;
+    height: 30px;
+    width: 45px;
+    color: #fff;
+    border-radius: 5px;
+    line-height: 30px;
+    text-align: center;
+    background: #343a40;
+    border: 1px solid #343a40;
+    user-select: none;
+}
+.quiz_box header .time_line{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 3px;
+    background: #007bff;
+}
+section{
+    padding: 25px 30px 20px 30px;
+    background: #fff;
+}
+section .que_text{
+    font-size: 25px;
+    font-weight: 600;
+}
+section .option_list{
+    padding: 20px 0px;
+    display: block;   
+}
+section .option_list .option{
+    background: aliceblue;
+    border: 1px solid #84c5fe;
+    border-radius: 5px;
+    padding: 8px 15px;
+    font-size: 17px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .total_que {
+    padding: 15px 20px 25px 25px;
+    background: rgb(201, 180, 180);
+}
+footer button.next_btn {
+    padding: 15px 30px;
+    background-color: #b8daff;
+    color:rgb(38, 38, 176)
+
+}
+
+footer button.next_btn:hover {
+    background: #35851f;
+}
+
+.result_box {
+    padding: 15px 20px 25px 25px;
+    background-color: rgb(110, 234, 32);
+}
+
+.buttons button.restart {
+    padding: 15px 30px;
+    color: #fff;
+    background: #007bff;
+}
+.buttons button.restart:hover {
+    background: #5fac3e;
+}
+.buttons button h3 {
+    padding: 15px 30px;
+    color: #007bff;
+    background: rgb(228, 228, 96);
+}
+.buttons button h3:hover {
+    color: #fff;
+    background: #007bff;
+}
