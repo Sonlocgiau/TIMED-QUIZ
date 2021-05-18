@@ -1,3 +1,4 @@
+
 var info_box = document.querySelector(".info_box");
 var exit_btn = info_box.querySelector(".buttons .quit");
 var start_btn = info_box.querySelector(".buttons .restart");
@@ -28,8 +29,8 @@ var userScore = 0;
 var counter;
 var counterLine;
 var widthValue = 0;
+
 var start_quiz = result_box.querySelector(".buttons .restart");
-var quit_quiz = result_box.querySelector(".buttons .quit");
 
 start_quiz.onclick = function() {
     quiz_box.classList.add("activeQuiz");
@@ -47,10 +48,6 @@ start_quiz.onclick = function() {
     startTimerLine(widthValue);
     timeText.textContent = "Time Left";
     next_btn.classList.remove("show");
-}
-
-quit_quiz.onclick = function() {
-    window.location.reload();
 }
 
 var next_btn = document.querySelector("footer .next_btn");
@@ -92,8 +89,9 @@ function showQuetions(index) {
     }
 }
 
-var tickIcon = '<div class="icon tick"><class="fas fa-check"></div>';
-var crossIcon = '<div class="icon cross">< class="fas fa-times"></div>';
+var tickIcon = '<div class="icon tick"><a class="fas fa-check"></a></div>';
+var crossIcon = '<div class="icon cross"><a class="fas fa-times"></a></div>';
+
 function optionSelected(answer) {
     clearInterval(counter);
     clearInterval(counterLine);
@@ -135,7 +133,7 @@ function showResult(){
         var scoreTag = 'and congrats!, You got <p>'+ userScore +'</p> out of <p>'+ questions.length +'</p>';
         scoreText.innerHTML = scoreTag;
     }
-    else if(userScore > 1) {
+    else if(userScore > 2) {
         var scoreTag = 'and nice, You got <p>'+ userScore +'</p> out of <p>'+ questions.length + '</p>';
         scoreText.innerHTML = scoreTag;
     }
@@ -187,6 +185,6 @@ function startTimerLine(time){
 
 
 function queCounter(index) {
-    var totalQueCounTag = '<p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions';
+    var totalQueCounTag = '<span><p>'+ index +'</p> of <p>'+ questions.length +'</p> Questions</span>';
     bottom_ques_counter.innerHTML = totalQueCounTag;
 }
